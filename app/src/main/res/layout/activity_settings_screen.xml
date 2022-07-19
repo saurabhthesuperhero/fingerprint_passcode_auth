@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SettingsScreen">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="48dp"
+        android:text="Choose your preference"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_pass"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Passcode (click to set)" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/passswitch"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end">
+
+        </androidx.appcompat.widget.SwitchCompat>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/tv_finger"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Fingerprint" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/finger_switch"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end">
+
+        </androidx.appcompat.widget.SwitchCompat>
+    </LinearLayout>
+
+
+
+</LinearLayout>
